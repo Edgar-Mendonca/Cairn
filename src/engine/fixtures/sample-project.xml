@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- Hand-written test file in the project XML (MSPDI) layout. -->
+<Project xmlns="http://schemas.microsoft.com/project">
+	<SaveVersion>14</SaveVersion>
+	<Name>Pump Station Upgrade.xml</Name>
+	<Title>Pump Station Upgrade</Title>
+	<Company>Example Water &amp; Power</Company>
+	<Author>Planner</Author>
+	<Manager>R. Planner</Manager>
+	<ScheduleFromStart>1</ScheduleFromStart>
+	<StartDate>2026-02-02T08:00:00</StartDate>
+	<FinishDate>2026-03-20T17:00:00</FinishDate>
+	<CalendarUID>1</CalendarUID>
+	<DefaultStartTime>08:00:00</DefaultStartTime>
+	<MinutesPerDay>480</MinutesPerDay>
+	<MinutesPerWeek>2400</MinutesPerWeek>
+	<DaysPerMonth>20</DaysPerMonth>
+	<CurrencySymbol>$</CurrencySymbol>
+	<CurrencyCode>USD</CurrencyCode>
+	<StatusDate>2026-02-13T17:00:00</StatusDate>
+	<ExtendedAttributes>
+		<ExtendedAttribute>
+			<FieldID>188743731</FieldID>
+			<FieldName>Text1</FieldName>
+			<Alias>Area</Alias>
+		</ExtendedAttribute>
+		<ExtendedAttribute>
+			<FieldID>188743767</FieldID>
+			<FieldName>Number1</FieldName>
+			<Alias>Risk score</Alias>
+		</ExtendedAttribute>
+	</ExtendedAttributes>
+	<Calendars>
+		<Calendar>
+			<UID>1</UID>
+			<Name>Standard</Name>
+			<IsBaseCalendar>1</IsBaseCalendar>
+			<BaseCalendarUID>-1</BaseCalendarUID>
+			<WeekDays>
+				<WeekDay><DayType>1</DayType><DayWorking>0</DayWorking></WeekDay>
+				<WeekDay><DayType>2</DayType><DayWorking>1</DayWorking><WorkingTimes><WorkingTime><FromTime>08:00:00</FromTime><ToTime>12:00:00</ToTime></WorkingTime><WorkingTime><FromTime>13:00:00</FromTime><ToTime>17:00:00</ToTime></WorkingTime></WorkingTimes></WeekDay>
+				<WeekDay><DayType>3</DayType><DayWorking>1</DayWorking><WorkingTimes><WorkingTime><FromTime>08:00:00</FromTime><ToTime>12:00:00</ToTime></WorkingTime><WorkingTime><FromTime>13:00:00</FromTime><ToTime>17:00:00</ToTime></WorkingTime></WorkingTimes></WeekDay>
+				<WeekDay><DayType>4</DayType><DayWorking>1</DayWorking><WorkingTimes><WorkingTime><FromTime>08:00:00</FromTime><ToTime>12:00:00</ToTime></WorkingTime><WorkingTime><FromTime>13:00:00</FromTime><ToTime>17:00:00</ToTime></WorkingTime></WorkingTimes></WeekDay>
+				<WeekDay><DayType>5</DayType><DayWorking>1</DayWorking><WorkingTimes><WorkingTime><FromTime>08:00:00</FromTime><ToTime>12:00:00</ToTime></WorkingTime><WorkingTime><FromTime>13:00:00</FromTime><ToTime>17:00:00</ToTime></WorkingTime></WorkingTimes></WeekDay>
+				<WeekDay><DayType>6</DayType><DayWorking>1</DayWorking><WorkingTimes><WorkingTime><FromTime>08:00:00</FromTime><ToTime>12:00:00</ToTime></WorkingTime><WorkingTime><FromTime>13:00:00</FromTime><ToTime>17:00:00</ToTime></WorkingTime></WorkingTimes></WeekDay>
+				<WeekDay><DayType>7</DayType><DayWorking>0</DayWorking></WeekDay>
+				<WeekDay><DayType>0</DayType><DayWorking>0</DayWorking><TimePeriod><FromDate>2026-02-16T00:00:00</FromDate><ToDate>2026-02-16T23:59:00</ToDate></TimePeriod></WeekDay>
+			</WeekDays>
+			<Exceptions>
+				<Exception>
+					<EnteredByOccurrences>0</EnteredByOccurrences>
+					<TimePeriod><FromDate>2026-02-16T00:00:00</FromDate><ToDate>2026-02-16T23:59:00</ToDate></TimePeriod>
+					<Occurrences>1</Occurrences>
+					<Name>Public holiday</Name>
+					<Type>1</Type>
+					<DayWorking>0</DayWorking>
+				</Exception>
+			</Exceptions>
+		</Calendar>
+		<Calendar>
+			<UID>3</UID>
+			<Name>Site Lead</Name>
+			<IsBaseCalendar>0</IsBaseCalendar>
+			<BaseCalendarUID>1</BaseCalendarUID>
+			<Exceptions>
+				<Exception>
+					<TimePeriod><FromDate>2026-02-24T00:00:00</FromDate><ToDate>2026-02-25T23:59:00</ToDate></TimePeriod>
+					<Name>Leave</Name>
+					<Type>1</Type>
+					<DayWorking>0</DayWorking>
+				</Exception>
+			</Exceptions>
+		</Calendar>
+	</Calendars>
+	<Tasks>
+		<Task><UID>0</UID><ID>0</ID><Name>Pump Station Upgrade</Name><OutlineNumber>0</OutlineNumber><OutlineLevel>0</OutlineLevel><Summary>1</Summary></Task>
+		<Task>
+			<UID>1</UID><ID>1</ID><Name>Design</Name><Type>1</Type><IsNull>0</IsNull><WBS>1</WBS><OutlineNumber>1</OutlineNumber><OutlineLevel>1</OutlineLevel>
+			<Priority>500</Priority><Start>2026-02-02T08:00:00</Start><Finish>2026-02-13T17:00:00</Finish><Duration>PT80H0M0S</Duration><DurationFormat>53</DurationFormat>
+			<Milestone>0</Milestone><Summary>1</Summary><Manual>0</Manual><Active>1</Active><PercentComplete>50</PercentComplete><FixedCost>0</FixedCost><ConstraintType>0</ConstraintType>
+		</Task>
+		<Task>
+			<UID>2</UID><ID>2</ID><Name>Survey &amp; hydraulic model</Name><Type>0</Type><IsNull>0</IsNull><WBS>1.1</WBS><OutlineNumber>1.1</OutlineNumber><OutlineLevel>2</OutlineLevel>
+			<Priority>600</Priority><Start>2026-02-02T08:00:00</Start><Finish>2026-02-06T17:00:00</Finish><Duration>PT40H0M0S</Duration><DurationFormat>7</DurationFormat>
+			<Milestone>0</Milestone><Summary>0</Summary><EffortDriven>1</EffortDriven><Manual>0</Manual><Active>1</Active><PercentComplete>100</PercentComplete>
+			<FixedCost>150000</FixedCost><ActualStart>2026-02-02T08:00:00</ActualStart><ActualFinish>2026-02-06T17:00:00</ActualFinish><ConstraintType>0</ConstraintType>
+			<Notes>Includes <![CDATA[<site> walk-down]]> notes</Notes>
+			<ExtendedAttribute><FieldID>188743731</FieldID><Value>North</Value></ExtendedAttribute>
+			<ExtendedAttribute><FieldID>188743767</FieldID><Value>3</Value></ExtendedAttribute>
+			<Baseline><Number>0</Number><Start>2026-02-02T08:00:00</Start><Finish>2026-02-06T17:00:00</Finish><Duration>PT40H0M0S</Duration><Work>PT40H0M0S</Work><Cost>350000</Cost></Baseline>
+			<Baseline><Number>1</Number><Start>2026-02-02T08:00:00</Start><Finish>2026-02-06T17:00:00</Finish><Duration>PT40H0M0S</Duration></Baseline>
+		</Task>
+		<Task>
+			<UID>3</UID><ID>3</ID><Name>Detailed design</Name><Type>0</Type><IsNull>0</IsNull><WBS>1.2</WBS><OutlineNumber>1.2</OutlineNumber><OutlineLevel>2</OutlineLevel>
+			<Start>2026-02-09T08:00:00</Start><Finish>2026-02-13T17:00:00</Finish><Duration>PT40H0M0S</Duration><DurationFormat>7</DurationFormat>
+			<Milestone>0</Milestone><Summary>0</Summary><Manual>0</Manual><Active>1</Active><PercentComplete>0</PercentComplete><ConstraintType>0</ConstraintType>
+			<PredecessorLink><PredecessorUID>2</PredecessorUID><Type>1</Type><CrossProject>0</CrossProject><LinkLag>0</LinkLag><LagFormat>7</LagFormat></PredecessorLink>
+			<Baseline><Number>0</Number><Start>2026-02-09T08:00:00</Start><Finish>2026-02-13T17:00:00</Finish><Duration>PT40H0M0S</Duration><Work>PT40H0M0S</Work><Cost>320000</Cost></Baseline>
+		</Task>
+		<Task><UID>9</UID><ID>4</ID><IsNull>1</IsNull></Task>
+		<Task>
+			<UID>4</UID><ID>5</ID><Name>Construction</Name><Type>1</Type><IsNull>0</IsNull><WBS>2</WBS><OutlineNumber>2</OutlineNumber><OutlineLevel>1</OutlineLevel>
+			<Duration>PT120H0M0S</Duration><Summary>1</Summary><Manual>0</Manual><Active>1</Active><FixedCost>500000</FixedCost><ConstraintType>0</ConstraintType>
+		</Task>
+		<Task>
+			<UID>5</UID><ID>6</ID><Name>Mobilise crew</Name><Type>0</Type><IsNull>0</IsNull><WBS>2.1</WBS><OutlineNumber>2.1</OutlineNumber><OutlineLevel>2</OutlineLevel>
+			<Duration>PT16H0M0S</Duration><DurationFormat>7</DurationFormat><Summary>0</Summary><Manual>0</Manual><Active>1</Active><ConstraintType>4</ConstraintType><ConstraintDate>2026-02-17T08:00:00</ConstraintDate>
+			<PredecessorLink><PredecessorUID>3</PredecessorUID><Type>1</Type><CrossProject>0</CrossProject><LinkLag>4800</LinkLag><LagFormat>7</LagFormat></PredecessorLink>
+		</Task>
+		<Task>
+			<UID>6</UID><ID>7</ID><Name>Install pumps</Name><Type>0</Type><IsNull>0</IsNull><WBS>2.2</WBS><OutlineNumber>2.2</OutlineNumber><OutlineLevel>2</OutlineLevel>
+			<Duration>PT60H0M0S</Duration><DurationFormat>7</DurationFormat><Summary>0</Summary><Manual>0</Manual><Active>1</Active><ConstraintType>0</ConstraintType>
+			<Deadline>2026-03-06T17:00:00</Deadline>
+			<PredecessorLink><PredecessorUID>5</PredecessorUID><Type>1</Type><CrossProject>0</CrossProject><LinkLag>0</LinkLag><LagFormat>7</LagFormat></PredecessorLink>
+		</Task>
+		<Task>
+			<UID>7</UID><ID>8</ID><Name>Electrical tie-in</Name><Type>2</Type><IsNull>0</IsNull><WBS>2.3</WBS><OutlineNumber>2.3</OutlineNumber><OutlineLevel>2</OutlineLevel>
+			<Duration>PT24H0M0S</Duration><DurationFormat>7</DurationFormat><Summary>0</Summary><Manual>1</Manual><ManualStart>2026-02-26T08:00:00</ManualStart><ManualDuration>PT24H0M0S</ManualDuration><Active>1</Active><ConstraintType>0</ConstraintType>
+			<PredecessorLink><PredecessorUID>6</PredecessorUID><Type>3</Type><CrossProject>0</CrossProject><LinkLag>9600</LinkLag><LagFormat>7</LagFormat></PredecessorLink>
+		</Task>
+		<Task>
+			<UID>8</UID><ID>9</ID><Name>Commissioning complete</Name><Type>0</Type><IsNull>0</IsNull><WBS>3</WBS><OutlineNumber>3</OutlineNumber><OutlineLevel>1</OutlineLevel>
+			<Duration>PT0H0M0S</Duration><DurationFormat>7</DurationFormat><Milestone>1</Milestone><Summary>0</Summary><Manual>0</Manual><Active>1</Active><ConstraintType>0</ConstraintType>
+			<PredecessorLink><PredecessorUID>6</PredecessorUID><Type>1</Type><CrossProject>0</CrossProject><LinkLag>0</LinkLag><LagFormat>7</LagFormat></PredecessorLink>
+			<PredecessorLink><PredecessorUID>7</PredecessorUID><Type>0</Type><CrossProject>0</CrossProject><LinkLag>0</LinkLag><LagFormat>7</LagFormat></PredecessorLink>
+			<PredecessorLink><PredecessorUID>77</PredecessorUID><Type>1</Type><CrossProject>1</CrossProject><LinkLag>0</LinkLag><LagFormat>7</LagFormat></PredecessorLink>
+		</Task>
+	</Tasks>
+	<Resources>
+		<Resource><UID>0</UID><ID>0</ID><Type>1</Type><IsNull>0</IsNull><MaxUnits>1.00</MaxUnits></Resource>
+		<Resource>
+			<UID>1</UID><ID>1</ID><Name>Design Engineer</Name><Type>1</Type><IsNull>0</IsNull><Initials>DE</Initials><Group>Engineering</Group>
+			<MaxUnits>1.00</MaxUnits><StandardRate>85</StandardRate><StandardRateFormat>2</StandardRateFormat><CostPerUse>0</CostPerUse><CalendarUID>-1</CalendarUID>
+			<Rates>
+				<Rate><RatesFrom>1984-01-01T00:00:00</RatesFrom><RatesTo>2026-02-28T23:59:00</RatesTo><RateTable>0</RateTable><StandardRate>85</StandardRate></Rate>
+				<Rate><RatesFrom>2026-03-01T00:00:00</RatesFrom><RatesTo>2049-12-31T23:59:00</RatesTo><RateTable>0</RateTable><StandardRate>95</StandardRate></Rate>
+				<Rate><RatesFrom>1984-01-01T00:00:00</RatesFrom><RatesTo>2049-12-31T23:59:00</RatesTo><RateTable>1</RateTable><StandardRate>120</StandardRate></Rate>
+			</Rates>
+		</Resource>
+		<Resource>
+			<UID>2</UID><ID>2</ID><Name>Site Lead</Name><Type>1</Type><IsNull>0</IsNull><Initials>SL</Initials>
+			<MaxUnits>1.00</MaxUnits><StandardRate>70</StandardRate><StandardRateFormat>2</StandardRateFormat><CostPerUse>20000</CostPerUse><CalendarUID>3</CalendarUID>
+		</Resource>
+		<Resource>
+			<UID>3</UID><ID>3</ID><Name>Fitters</Name><Type>1</Type><IsNull>0</IsNull><MaxUnits>3.00</MaxUnits><StandardRate>45</StandardRate><StandardRateFormat>2</StandardRateFormat>
+		</Resource>
+		<Resource>
+			<UID>4</UID><ID>4</ID><Name>Pipe spools</Name><Type>0</Type><IsNull>0</IsNull><MaterialLabel>ea</MaterialLabel><StandardRate>1200</StandardRate><StandardRateFormat>7</StandardRateFormat>
+		</Resource>
+		<Resource>
+			<UID>5</UID><ID>5</ID><Name>Crane hire</Name><Type>2</Type><IsNull>0</IsNull>
+		</Resource>
+	</Resources>
+	<Assignments>
+		<Assignment><UID>1</UID><TaskUID>2</TaskUID><ResourceUID>1</ResourceUID><Units>1</Units><Work>PT40H0M0S</Work></Assignment>
+		<Assignment><UID>2</UID><TaskUID>3</TaskUID><ResourceUID>1</ResourceUID><Units>0.5</Units><Work>PT20H0M0S</Work></Assignment>
+		<Assignment><UID>3</UID><TaskUID>6</TaskUID><ResourceUID>2</ResourceUID><Units>1</Units><Work>PT60H0M0S</Work></Assignment>
+		<Assignment><UID>4</UID><TaskUID>6</TaskUID><ResourceUID>3</ResourceUID><Units>2</Units><Work>PT120H0M0S</Work><WorkContour>1</WorkContour></Assignment>
+		<Assignment><UID>5</UID><TaskUID>6</TaskUID><ResourceUID>4</ResourceUID><Units>12</Units></Assignment>
+		<Assignment><UID>6</UID><TaskUID>6</TaskUID><ResourceUID>5</ResourceUID><Cost>850000</Cost></Assignment>
+		<Assignment><UID>7</UID><TaskUID>4</TaskUID><ResourceUID>0</ResourceUID><Units>1</Units></Assignment>
+	</Assignments>
+</Project>
